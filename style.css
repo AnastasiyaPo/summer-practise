@@ -1,0 +1,48 @@
+body{
+    padding: 20px;
+    min-width: 320px;
+}
+.header .contact {
+    background: rgb(42, 162, 212);
+    color:white;
+}
+.main_strip{
+    min-height: 50px;
+    padding-left: 15px;
+}
+.icon img{
+    margin: 10px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: -5px;
+}
+.icon{
+    display: inline-block;
+}
+
+.menu{
+    display: inline-block;
+}
+
+.top_block{
+    display: inline-block;
+}
+.social_networks{
+    position: absolute;
+    right: auto;
+    left: 40px;
+    top: 25px; 
+}
+.top_menu{
+    position: absolute;
+    left: auto;
+    right: 40px;
+    top: 45px; 
+}
+.add{
+    position: absolute;
+    padding: 5px 15px 0px;
+    height: 40px;
+    right:50px;
+    top: 60px;
+}
