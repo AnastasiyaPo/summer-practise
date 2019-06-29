@@ -5,6 +5,7 @@ body{
 .header .contact {
     background: rgb(42, 162, 212);
     color:white;
+    position: revaative;
 }
 .main_strip{
     min-height: 50px;
@@ -17,10 +18,6 @@ body{
     margin-right: -5px;
 }
 .icon{
-    display: inline-block;
-}
-
-.menu{
     display: inline-block;
 }
 
@@ -41,8 +38,87 @@ body{
 }
 .add{
     position: absolute;
-    padding: 5px 15px 0px;
+    padding: 0px 15px 5px;
     height: 40px;
     right:50px;
-    top: 60px;
+    top: 65px;
+}
+
+.top_bloch_name{
+    display: inline-block;
+}
+.euonymus{
+    position: absolute;
+    left: 60px;
+    top: 130px; 
+    font-size: 40px;
+}
+.name_decryption{
+    color:rgb(155, 154, 154);
+    border-left: rgb(155, 154, 154) solid 1px;
+    padding-left: 10px;
+    position: absolute;
+    left: 245px;
+    top: 135px;
+    margin-left:10px;
+}
+.search{
+    position: absolute;
+    right: 50px;
+    top: 135px;
+}
+.input_search{
+    background: black;
+    color:white;
+    height: 35px;
+    width: 250px;
+    border-radius: 10% 0 0 10%;
+    outline:none;
+    border: black;
+    margin-right:-5px;
+}
+.submit{
+    background: rgb(42, 162, 212);
+    color:white;height: 35px;
+    padding: 0 10px;
+    border-radius: 0 10% 10% 0;
+    outline:none;
+    border: rgb(42, 162, 212);
+    font-weight: bold;
+}
+.small_menu img{
+    display:none;
+}
+.small_manu{
+    display:none;
+}
+
+@media (min-width: 320px) and (max-width:750px) {
+    .top_menu{
+        display:none;
+    }
+    .name_decryption{
+        display:none;
+    }
+    .input_search{
+        width: 150px;
+    }
+    .small_menu{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 55px; 
+        left:auto;
+        top: 40px;
+        z-index: 1;
+    }
+    .small_menu img{
+        display: block;
+        width: 30px;
+        height: 30px;
+    } 
+    /*.small_menu img:hover ~ .menu{
+        display:block;
+    }*/
 }
