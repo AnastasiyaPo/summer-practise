@@ -4,6 +4,7 @@
  <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
  <title>Frontend</title>
  <link rel = "stylesheet" href = "style.css" type = "text/css">
+ <link rel = "stylesheet" href = "style.css" type = "text/css">
  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body style = "font-family: Roboto">
@@ -46,7 +47,76 @@
             <li><a href = "#">LONG TEXT LINK</a></li>
         </ul>
     </div>
-    <div class = "slider"><canvas id = "canva_slider" max-width = "960px"></canvas></div>
+    <!-- <div class = "slider"><canvas id = "canva_slider" max-width = "960px"></canvas></div> -->
+    <div class = "slider">
+
+        <div class = "item">
+            <img src = "slider/1.png">
+            <div class = "slider_text">
+                <p class = "name">Called though excuse1</p>
+                1Course sir people worthy horses add entire suffer. 
+                Steepest speaking up attended it as. You high bed wish help call draw side. 
+                Whatever throwing we on resolved entrance together graceful. 
+                Any delicate you how kindness horrible outlived servants. Called though excuse
+            </div>
+        </div>
+<!-- 
+        <div class = "item">
+        <img src = "slider/2.png">
+            <div class = "slider_text">
+                <p class = "name">Called though excuse2</p>
+                2Course sir people worthy horses add entire suffer. 
+                Steepest speaking up attended it as. You high bed wish help call draw side. 
+                Whatever throwing we on resolved entrance together graceful. 
+                Any delicate you how kindness horrible outlived servants. Called though excuse
+            </div>
+        </div>
+
+        <div class = "item">
+        <img src = "slider/3.png">
+            <div class = "slider_text">
+                <p class = "name">Called though excuse3</p>
+                3Course sir people worthy horses add entire suffer. 
+                Steepest speaking up attended it as. You high bed wish help call draw side. 
+                Whatever throwing we on resolved entrance together graceful. 
+                Any delicate you how kindness horrible outlived servants. Called though excuse
+            </div>
+        </div>
+
+        <div class = "item">
+        <img src = "slider/4.png">
+            <div class = "slider_text">
+                <p class = "name">Called though excuse4</p>
+                4Course sir people worthy horses add entire suffer. 
+                Steepest speaking up attended it as. You high bed wish help call draw side. 
+                Whatever throwing we on resolved entrance together graceful. 
+                Any delicate you how kindness horrible outlived servants. Called though excuse
+            </div>
+        </div>
+
+        <div class = "item">
+        <img src = "slider/5.png">
+            <div class = "slider_text">
+                <p class = "name">Called though excuse5</p>
+                5Course sir people worthy horses add entire suffer. 
+                Steepest speaking up attended it as. You high bed wish help call draw side. 
+                Whatever throwing we on resolved entrance together graceful. 
+                Any delicate you how kindness horrible outlived servants. Called though excuse
+            </div>
+        </div> -->
+
+    </div>
+    <a class = "slider_buttom prev" onclick = "minusSlide()">&#10094</a>
+    <a class = "slider_buttom next" onclick = "plusSlide()">&#10095</a>
+    <div class = "slider_dots">
+        <span class = "slider_dots_item" onclick = "currentSlide(1)"></span>
+        <span class = "slider_dots_item" onclick = "currentSlide(2)"></span>
+        <span class = "slider_dots_item" onclick = "currentSlide(3)"></span>
+        <span class = "slider_dots_item" onclick = "currentSlide(4)"></span>
+        <span class = "slider_dots_item" onclick = "currentSlide(5)"></span>
+    </div>
+
+
     <div class = "small_slider">
         <div class = "block_in_small_slider">
             <img src = "small_slider/picture_to_ss.png" align = "left">
@@ -159,10 +229,13 @@
         <div class = "part_of_content invisible"></div>
     </div>   
 </div>
-
 <!-- поддон -->
 <div class = "footer">
-    <div class = scrolling><img src="icon/top.png" width = "70px"><div class = "top">TOP</div>
+    <div class = "scrolling">
+        <a id = "scrolltop">
+            <img src="icon/top.png" width = "70px">
+            <p class = "top">TOP</p>
+        </a>
     </div>
     <div class = "footer_information">
 
@@ -217,5 +290,6 @@
         </div>
 
 </div>
+<script src = "act.jsx"></script>
 </body>
 </html>
