@@ -290,19 +290,34 @@ body{
  .slider{
     position: relative;
     top: 140px;
-    max-height: 350px;
+    height: 350px;
     /* width: 960px; */
     background: rgb(82, 82, 82);
     margin: 0px 20px;
 } 
 .slider .item{
     text-align: center;
+    display:none;
+}
+.slider .first{
+    display:block;
 }
 .slider .item img{
     position:relative;
     max-width: 960px;
     max-height: 100%;
 }
+.slider .item .left{
+    /* display: none; */
+    animation-name: anim_img_left;
+    animation-duration: 0.6s;
+}
+.slider .item .right{
+    /* display: none; */
+    animation-name: anim_img_right;
+    animation-duration: 0.6s;
+}
+
 .slider .item .slider_text{
     position: absolute;
     right: 0;
@@ -314,6 +329,8 @@ body{
     font-size: 13px;
     padding: 0px 20px 20px 20px;
     text-align: left;
+    animation-name: anim_text;
+    animation-duration: 0.4s;
 }
 .slider .item .slider_text .name{
     font-size: 16px;
@@ -340,14 +357,41 @@ body{
     display: inline-block;
     border-radius: 50%;
     margin-right: 5px;
-    background:rgb(148, 145, 145);
+    background:rgb(182, 182, 182);
     border: rgb(148, 145, 145) solid 1px;
+}
+.slider_dots .first{
+    background: none;
 }
 .prev{
     left: 50px;
 }
 .next{
     right: 50px;
+}
+@keyframes anim_text{
+    from {
+        opacity: .1
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes anim_img_left{
+    from{
+        transform: translateX(-800px)
+    }
+    to{
+        transform: translateX(0px)
+    }
+}
+@keyframes anim_img_right{
+    from{
+        transform: translateX(800px)
+    }
+    to{
+        transform: translateX(0px)
+    }
 }
 
 .small_slider{
