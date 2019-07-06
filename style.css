@@ -42,6 +42,9 @@ body{
     border-left: white solid 1px;
     padding-left: 5px;
 }
+.top_menu .menu:hover{
+    text-decoration: underline;
+}
 .top_menu .sign_up{
     border: none;
 }
@@ -115,54 +118,6 @@ body{
 }
 #menu_gamburger{
     display:none;
-}
-
-
-@media (min-width: 320px) and (max-width:750px) {
-    .top_menu{
-        display:none;
-    }
-    .name_decryption{
-        display:none;
-    }
-    .input_search{
-        width: 150px;
-    }
-    .small_menu{
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        right: 55px; 
-        left:auto;
-        top: 40px;
-        z-index: 1;
-    }
-    .small_menu img{
-        display: block;
-        width: 30px;
-        height: 30px;
-    } 
-    .top_menu .menu{
-        border-left: none;
-        border-bottom: white solid 1px;
-        padding: 5px 0px;
-        display:block;
-    }
-    .top_menu .archived_news{
-        border: none;
-    }
-#menu_gamburger:checked ~ .top_menu{
-    display: block;
-    height: 190px;
-    width: 120px; 
-    top: 75px;
-    background:  rgb(42, 162, 212);
-    font-size: 24px;
-    border: white solid 1px;
-    z-index:1;
-    padding: 0px 5px;
-    }
 }
 
 
@@ -323,15 +278,14 @@ body{
     width: 960px;
     height: 100%;
 }
-.slider .item .left{
-    /* display: none; */
+
+.slider .item .left{  /* свойства присваиваются в act.js*/
     animation-name: anim_img_left;
     animation-duration: 0.4s;
 }
 .slider .item .right{
-    /* display: none; */
     animation-name: anim_img_right;
-    animation-duration: 0.4s;
+    animation-duration: 0.4s; 
 }
 
 .slider .item .slider_text{
@@ -364,7 +318,7 @@ body{
     transition: 0.2s; 
 }
 .slider_buttom:hover{
-    /* border:rgb(153, 153, 153) solid 1px; */
+     border:rgb(153, 153, 153) solid 1px;
     border: rgb(42, 162, 212) solid 3px;
     color: rgb(42, 162, 212);
     padding: 3px 13px;
@@ -420,13 +374,20 @@ body{
 .small_slider{
     position: relative;
     top:180px;
+    text-align: justify;
 }
 .block_in_small_slider{
     display: inline-block;
-    max-width: 23%;
-    min-width: 250px;
+    min-width: 23%;
+    max-width: 250px;
     margin: 10px;
+    text-align:left;
 }
+ .active{
+     display: none;
+    transform:translate(67%, 0);
+    transition-duration: 0.6s;
+} 
 .block_in_small_slider img{
     width: 48px;
     height: 48px;
@@ -480,6 +441,7 @@ body{
     width: 20px;
     height: 20px;
 }
+
 .information_block{
     position: relative;
     top: 200px;

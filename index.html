@@ -4,7 +4,7 @@
  <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
  <title>Frontend</title>
  <link rel = "stylesheet" href = "style.css" type = "text/css">
- <link rel = "stylesheet" href = "style.css" type = "text/css">
+ <link rel = "stylesheet" href = "behavior.css" type = "text/css">
  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body style = "font-family: Roboto">
@@ -109,39 +109,38 @@
     <a class = "slider_buttom prev" onclick = "minusSlide()">&#10094</a>
     <a class = "slider_buttom next" onclick = "plusSlide()">&#10095</a>
     <div class = "slider_dots">
-        <span class = "slider_dots_item first"></span>
-        <span class = "slider_dots_item"></span>
-        <span class = "slider_dots_item"></span>
-        <span class = "slider_dots_item"></span>
-        <span class = "slider_dots_item"></span>
+        <span class = "slider_dots_item first" onclick = "currentSlide(1)"></span>
+        <span class = "slider_dots_item" onclick = "currentSlide(2)"></span>
+        <span class = "slider_dots_item" onclick = "currentSlide(3)"></span>
+        <span class = "slider_dots_item" onclick = "currentSlide(4)"></span>
+        <span class = "slider_dots_item" onclick = "currentSlide(5)"></span>
     </div>
 
 
-    <div class = "small_slider">
-
-        
-        <div class = "block_in_small_slider">
+    <div class = "small_slider" id = "slider">
+ 
+        <div class = "block_in_small_slider nom1">
                 <img id = "ss1_img" src ="" align = "left">
                 <div class = "text">
                     <p class = "name" id = "ss1_name"></p>
                     <p class = "information_text ss1" id = "ss1_text"></p>
                 </div>
             </div>
-        <div class = "block_in_small_slider">
+        <div class = "block_in_small_slider nom2">
             <img id = "ss2_img" src = "" align = "left">
             <div class = "text">
                 <p class = "name" id = "ss2_name"></p>
                 <p class = "information_text" id = "ss2_text"></p>
             </div>
         </div>
-        <div class = "block_in_small_slider">
+        <div class = "block_in_small_slider nom3">
             <img id = "ss3_img" src = "" align = "left">
             <div class = "text">
                 <p class = "name" id = "ss3_name"></p>
                 <p class = "information_text" id = "ss3_text"></p>
             </div>
         </div>  
-        <div class = "block_in_small_slider">
+        <div class = "block_in_small_slider nom4">
             <img id = "ss4_img" src = "" align = "left">
             <div class = "text">
                 <p class = "name" id = "ss4_name"></p>
@@ -300,6 +299,8 @@
         </div>
 
 </div>
+
+<div id = "proba"></div>
 <script src = "act.js"></script>
 </body>
 </html>
