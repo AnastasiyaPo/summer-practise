@@ -44,6 +44,14 @@
     z-index:1;
     padding: 0px 5px;
     }
+	.euonymus{
+	font-size: 24px;
+	top: 130px;
+	left: 40px;
+	}
+	.euonymus:first-letter{
+    font-size: 40px;
+}
 }
 
 
@@ -69,6 +77,9 @@
     .main_menu li:hover{
         padding-bottom: 3px;
     }
+	.bottom_to_small_slider{
+        top:680px;
+    }
 }
 @media (min-width: 620px) and (max-width:800px) { 
     .slider{
@@ -90,6 +101,9 @@
     }
     .main_menu li:hover{
         padding-bottom: 3px;
+    }
+	.bottom_to_small_slider{
+        top:650px;
     }
 }
 @media (min-width: 320px) and (max-width:620px) { 
@@ -113,33 +127,7 @@
     .main_menu li:hover{
         padding-bottom: 1px;
     }
-}
-
-/* маленький слайдер */
-@media (min-width: 0px) and (max-width:1221px) {
-    .nom4{
-        display:none;
-    }
-    .block_in_small_slider{
-        max-width: 30%;
-        min-width: auto;
-    }
-}
-@media (min-width: 0px) and (max-width:890px) {
-    .nom3{
-        display:none;
-    }
-    .block_in_small_slider{
-        max-width: 40%;
-        min-width: auto;
-    }
-}
-@media (min-width: 0px) and (max-width:616px) {
-    .nom2{
-        display:none;
-    }
-    .block_in_small_slider{
-        max-width: 80%;
-        min-width: auto;
+	.bottom_to_small_slider{
+        top:550px;
     }
 }

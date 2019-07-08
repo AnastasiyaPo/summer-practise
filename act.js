@@ -64,7 +64,7 @@ function showSlides(n, direction){
 
 // маленький слайдер(не ограниченный без прокрутки)
 
-var ss_index = 0;
+
 var small_slider = [['small_slider/picture_to_ss1.png','1Indonectetus facilis','1Fat new smallness few supposing suspicion two. Way own uncommonly trave'],
                     ['small_slider/picture_to_ss2.png','2Indonectetus facilis','2Fat new smallness few supposing suspicion two. Way own uncommonly trave'],
                     ['small_slider/picture_to_ss3.png','3Indonectetus facilis','3Fat new smallness few supposing suspicion two. Way own uncommonly trave'],
@@ -74,104 +74,133 @@ var small_slider = [['small_slider/picture_to_ss1.png','1Indonectetus facilis','
                     ['small_slider/picture_to_ss7.png','7Indonectetus facilis','7Fat new smallness few supposing suspicion two. Way own uncommonly trave'],
             ];
 var ss_len = small_slider.length;
-var pic = document.getElementsByClassName("block_in_small_slider");
-ss_pic = pic.length;
 
+
+//добавление узла
+
+for (i = 4; i < ss_len; i++){
+ var div = document.createElement('div');
+ div.className = "block_in_small_slider ss_passive";
+ div.id = "idss" + (i + 1);
+ slider.appendChild(div);
+ var idss = document.getElementById("idss" + (i + 1));
+ var img = document.createElement('img');
+ img.id = "ss" + (i + 1) + "_img";
+ img.align = "left";
+ var text = document.createElement('div');
+ text.className = "text";
+ text.id = "text" + (i + 1);
+ text.innerHTML = "<p class = name id = ss" + (i + 1) + "_name></p><p class = information_text id = ss" + (i + 1) + "_text>";
+
+
+ idss.appendChild(img);
+ idss.appendChild(text);
+ img.src = small_slider[i][0];
+ var elm = document.getElementById("ss" + (i + 1) + "_name");
+ elm.innerHTML = small_slider[i][1];
+ elm = document.getElementById("ss" + (i + 1) + "_text");
+ elm.innerHTML = small_slider[i][2];
+}
+
+var pic = document.getElementsByClassName("block_in_small_slider");
+pic_len = pic.length;
 // начальное положение
-for (i = 0; i < ss_pic; i++){
+for (i = 0; i < pic_len; i++){
     document.getElementById("ss" + (i + 1) + "_img").src = small_slider[i][0];
     document.getElementById("ss" + (i + 1) + "_name").innerHTML = small_slider[i][1];
     document.getElementById("ss" + (i + 1) + "_text").innerHTML = small_slider[i][2];
     }
-// изменение
+
+console.log("ширина браузера = " + document.body.clientWidth);	
+// if (document.body.clientWidth > 1211) 
+	var ind_len = 4;
+// if (document.body.clientWidth <= 1211 && document.body.clientWidth > 941) 
+// 	var ind_len = 3;
+// if (document.body.clientWidth <= 941 && document.body.clientWidth > 657) 
+// 	var ind_len = 2;
+// if (document.body.clientWidth <= 657) 
+// 	var ind_len = 1;
 
 
-//добавление узла на примере 5элемента 
-// var div = document.createElement('div');
-// div.className = "block_in_small_slider";
-// div.id = "idss";
-// var img = document.createElement('img');
-// img.id = "ss5_img";
-// img.align = "left";
-// var text = document.createElement('div');
-// text.className = "text";
-// text.id = "text";
-// text.innerHTML = "<p class = name id = ss5_name></p><p class = information_text id = ss5_text>";
-
-// slider.appendChild(div);;
-// idss.appendChild(img);
-// idss.appendChild(text);
-// img.src = small_slider[4][0];
-// var elm = document.getElementById("ss5_name");
-// elm.innerHTML = small_slider[4][1];
-// elm = document.getElementById("ss5_text");
-// elm.innerHTML = small_slider[4][2];
+var ss_index = Array(ind_len);
+for (i = 0; i < ind_len; i++)
+		ss_index[i] = i;
 
 
 
-function change(picture){
-    for (i = 0; i < ss_pic; i++){
-    var elem = document.getElementById("ss" + (i + 1) + "_img");
-    elem.src = picture[i][0];
-    elem = document.getElementById("ss" + (i + 1) + "_name");
-    elem.innerHTML = picture[i][1];
-    elem = document.getElementById("ss" + (i + 1) + "_text");
-    elem.innerHTML = picture[i][2];
+function leaves(n){
+	var vr = ss_index[n];
+	pic[vr].className = pic[vr].className.replace(" ss_active_left", "");
+	pic[vr].className = pic[vr].className.replace(" ss_active_right", "");
+		pic[vr].className = pic[vr].className += " ss_passive";
+}
+function come_r(){
+	pic[ss_index[0] - 1].className = pic[ss_index[0] - 1].className.replace(" ss_passive", "");
+}
+function cancel_activity(direction){
+    if (direction.localeCompare("left") == 0){
+	    for (i = 0; i < ind_len; i++)
+            ss_index[i]++;
     }
+    if (direction.localeCompare("right") == 0) {
+        for (i = 0; i < ind_len; i++)
+            ss_index[i]--;
+    }
+        
+	for (i = 0; i < pic_len; i++){
+        pic[i].className = pic[i].className.replace(" ss_active_left", "");
+        pic[i].className = pic[i].className.replace(" ss_active_right", "");
+    }
+    
+}
+function cancel_the_end(direction){
+	if (direction.localeCompare("left") == 0){	
+		for (i = 0; i < pic_len; i++){
+			pic[i].className = pic[i].className.replace(" ss_active_left_end", "");
+		}		
+	}
+	if (direction.localeCompare("right") == 0){	
+		for (i = 0; i < pic_len; i++){
+			pic[i].className = pic[i].className.replace(" ss_active_right_end", "");
+		}		
+	}
+}
+function left_ss(){
+    console.log(ss_index);
+	if (ss_index[0] >= 0 && ss_index[ind_len - 1] > ss_index[0] && ss_index[0] < ss_len - ind_len){  
+		pic[ss_index[ind_len - 1] + 1].className = pic[ss_index[ind_len - 1] + 1].className.replace(" ss_passive", "");//для последнего элемента
+		
+		for (i = 0; i < (ind_len + 1); i++){
+			pic[ss_index[0] + i].className = pic[ss_index[0] + i].className += " ss_active_left"; //для середины
+		}
+	
+    setTimeout(leaves, 400, 0);
+    setTimeout(cancel_activity, 400, "left");	
+	}
+	else{
+		slider.insertBefore(pic[0], null);
+		for (i = 0; i < ind_len; i++)
+			ss_index[i]--;
+		left_ss();
+	}
+	
 }
 
-function left_ss(){
-    var picture = Array(ss_pic);
-        for (i = 0; i < picture.length; i++){
-            picture[i] = new Array(3);
-        }
-    
-    if (ss_index > 0 && ss_index <= ss_len - ss_pic){
-        for (i = 0; i < ss_pic; i++)
-            picture[i] = small_slider[ss_index + i - 1];
-    }
-    else if (ss_len - ss_pic < ss_index && ss_index < ss_len){
-        var difference = ss_len - ss_index + 1;
-        for (i = 0; i < difference; i++)
-            picture[i] = small_slider[ss_index + i - 1];
-        for (i = 0; i < ss_pic - difference; i++)
-            picture[difference + i] = small_slider[i];
-        }
-    else{  
-        picture[0] = small_slider[ss_len - 1];
-        for (i = 0; i < ss_pic - 1; i++)
-            picture[i + 1] = small_slider[i];
-        }
-
-    change(picture);
-    if (ss_index - 1 >= 0) ss_index--;
-    else ss_index = ss_len - 1;
-    }
-
-
-    function right_ss(){
-        var picture = Array(ss_pic);
-        for (i = 0; i < picture.length; i++){
-            picture[i] = new Array(3);
-        }
-        if (ss_index + ss_pic >= ss_len){
-            var difference = ss_len - ss_index - 1;
-            for (i = 0; i < difference; i++)
-                picture[i] = small_slider[ss_index + i + 1];
-            var difference_new = ss_pic - difference;
-            for (i = 0; i < difference_new; i++)
-                picture[difference + i] = small_slider[i];
-            }
-        else {
-            for (i = 0; i < ss_pic; i++)
-                picture[i] = small_slider[ss_index + i + 1];
-            }
-        change(picture);
-        if (ss_index + 1 < ss_len) ss_index++;
-        else ss_index = 0;
-    }
-
-
-
-    
-
+function right_ss(){
+	if (ss_index[0] <= (pic_len - ind_len) && ss_index[0] > 0 && ss_index[ind_len - 1] > ss_index[0]){  
+	
+		for (i = 0; i < ind_len; i++){
+			pic[ss_index[0] + i].className = pic[ss_index[0] + i].className += " ss_active_right"; 
+		}
+	setTimeout(come_r, 400);
+	setTimeout(leaves, 400, ind_len - 1);
+    setTimeout(cancel_activity, 400, "right");			
+	}
+	else{
+		slider.insertBefore(pic[pic_len - 1], slider.firstChild);
+		for (i = 0; i < ind_len; i++)
+			ss_index[i]++;
+		right_ss();
+	}
+        
+}
