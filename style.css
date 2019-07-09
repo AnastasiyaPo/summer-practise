@@ -416,9 +416,6 @@ body{
         transform: translateX(115%)
     }
 }
-.small_slider .ss_passive{
-display: none;
-}
 .block_in_small_slider img{
     width: 48px;
     height: 48px;
