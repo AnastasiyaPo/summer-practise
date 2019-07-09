@@ -111,17 +111,6 @@ for (i = 0; i < pic_len; i++){
     document.getElementById("ss" + (i + 1) + "_text").innerHTML = small_slider[i][2];
     }
 
-console.log("ширина браузера = " + document.body.clientWidth);	
-// if (document.body.clientWidth > 1211) 
-	var ind_len = 4;
-// if (document.body.clientWidth <= 1211 && document.body.clientWidth > 941) 
-// 	var ind_len = 3;
-// if (document.body.clientWidth <= 941 && document.body.clientWidth > 657) 
-// 	var ind_len = 2;
-// if (document.body.clientWidth <= 657) 
-// 	var ind_len = 1;
-
-
 function time_stop_to_left(){
     slider.insertBefore(pic[0], null);
     for (i = 0; i < pic_len; i++)

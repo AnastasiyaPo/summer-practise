@@ -441,7 +441,14 @@ body{
     display: inline-block;
     width: 47%;
     border-bottom: rgb(228, 221, 221) solid 1px;
+    text-decoration: none;
+}
+.part_of_act a{
+    text-decoration: none;    
     color: rgb(82, 82, 82);
+}
+.part_of_act a:hover{
+    color: rgb(42, 162, 212);
 }
 .welcome_message{
     margin-right: 40px;
@@ -457,19 +464,17 @@ body{
 .bottom_to_small_slider .bottom{
     display: inline-block;
     border-radius: 70%;
-    width: 25px;
-    height: 25px;
-    background: url("icon/arrow.png") 20% 50%;
-    transition: 0.2s; 
-}
-.bottom_to_small_slider .to_the_right{
-    transform: scale(-1, -1);
+    font-size: 15px;
+    padding: 3px 8px;
+    background: rgb(42, 162, 212);
+    color: white;
+    transition: 0.4s ease;
+    /* transition: 0.4s;
+    transition-timing-function: linear; */
 }
 .bottom_to_small_slider .bottom:hover{
-    border: rgba(42, 45, 212, 0.486) solid 3px;
-    width: 20px;
-    height: 20px;
-    margin-bottom: -1px;
+    border: rgba(42, 45, 212, 0.486) solid 2px;
+    padding: 2px 7px;
 }
 
 .information_block{
