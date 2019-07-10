@@ -122,14 +122,14 @@ function time_stop_to_right(){
         pic[i].className = pic[i].className.replace(" ss_active_right", "");
 }
 function left_ss(){
-    setTimeout(time_stop_to_left, 400);
+    setTimeout(time_stop_to_left, 600);
     for (i = 0; i < pic_len; i++){
         	pic[i].className = pic[i].className += " ss_active_left"; 
         }
 }
 
 function right_ss(){
-    setTimeout(time_stop_to_right, 400);
+    setTimeout(time_stop_to_right, 600);
     for (i = 0; i < pic_len; i++){
         	pic[i].className = pic[i].className += " ss_active_right"; 
         }

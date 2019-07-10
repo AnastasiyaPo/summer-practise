@@ -392,13 +392,13 @@ body{
 	display: inline-block;
     animation-name: ss_departure_left;
 	animation-fill-mode: forwards;
-    animation-duration: 0.4s;
+    animation-duration: 0.6s;
 }
 .small_slider .ss_active_right{
 	display: inline-block;
     animation-name: ss_departure_right;
 	animation-fill-mode: forwards;
-    animation-duration: 0.4s;
+    animation-duration: 0.6s;
 }
 
 @keyframes ss_departure_left{
