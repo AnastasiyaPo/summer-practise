@@ -7,47 +7,50 @@
  <link rel = "stylesheet" href = "behavior.css" type = "text/css">
  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
-<body style = "font-family: Roboto">
+<body style="font-family: Roboto; margin-left: 0px;margin-right: 0px; min-width: 320px;">
     <!-- шапка -->
 <div class = "header">
-    <div class = "contact main_strip">
-        <div class = "top_block social_networks">
-            <div class = "icon linkedin"><a hraf = "#"><img src = "icon/linkedin.png"></a></div>
-            <div class = "icon twiter"><a hraf = "#"><img src = "icon/twiter.png"></a></div>
-            <div class = "icon pinterest"><a hraf = "#"><img src = "icon/pinterest.png"></a></div>
-            <div class = "icon google"><a hraf = "#"><img src = "icon/google.png"></a></div>
-            <div class = "icon rss"><a hraf = "#"><img src = "icon/rss.png"></a></div>
+    <div class = "contact">
+        <div class = "main_strip">
+            <div class = "top_block social_networks">
+                <div class = "icon linkedin"><a hraf = "#"><img src = "icon/linkedin.png"></a></div>
+                <div class = "icon twiter"><a hraf = "#"><img src = "icon/twiter.png"></a></div>
+                <div class = "icon pinterest"><a hraf = "#"><img src = "icon/pinterest.png"></a></div>
+                <div class = "icon google"><a hraf = "#"><img src = "icon/google.png"></a></div>
+                <div class = "icon rss"><a hraf = "#"><img src = "icon/rss.png"></a></div>
+            </div>
+            <input type ="checkbox" name = "k" id = "menu_gamburger">
+            <label for = "menu_gamburger" class = "small_menu"><img src = "icon/menu.png"></label>
+            <nav class = "top_block top_menu">
+                <a class = "menu sign_up" hraf = "#" >Sign Up</a> 
+                <a class = "menu login" hraf = "#">Login</a> 
+                <a class = "menu rss_feeds" hraf = "#">RSS Feeds</a> 
+                <a class = "menu archived_news" hraf = "#" >Archived News</a>
+            </nav>
         </div>
-        <input type ="checkbox" name = "k" id = "menu_gamburger">
-        <label for = "menu_gamburger" class = "small_menu"><img src = "icon/menu.png"></label>
-        <nav class = "top_block top_menu">
-            <a class = "menu sign_up" hraf = "#" >Sign Up</a> 
-            <a class = "menu login" hraf = "#">Login</a> 
-            <a class = "menu rss_feeds" hraf = "#">RSS Feeds</a> 
-            <a class = "menu archived_news" hraf = "#" >Archived News</a>
-        </nav></div>
-    <!-- <div class = "contact add"><p>+</p></div> -->
-    <div class = "name">
-        <div class = "top_bloch_name euonymus"> EUONYMUS </div>
-        <div class = "top_bloch_name name_decryption"> Free RSD <br> Website Template </div>
-        <div class = "top_bloch_name search"><input name = "search" class = "input_search" type = "search" placeholder = "Search Our Website...">
+    </div> 
+    <div class = "main_name">
+        <div class = "top_block_name euonymus">EUONYMUS</div>
+        <div class = "top_block_name name_decryption"> Free RSD <br> Website Template </div>
+        <div class = "top_block_name search"><input name = "search" class = "input_search" type = "search" placeholder = "Search Our Website...">
                             <input type = "submit" class = "submit" value = "SUBMIT"></div>
     </div>
 </div>
 <!-- основная часть -->
 <div class = "content">
-    <div class = "main_menu"> 
-        <ul>
-            <li><a href = "#">HOME</a></li>
-            <li><a href = "#">STYLE DEMO</a></li>
-            <li><a href = "#">FULL WIDTH</a></li>
-            <li><a href = "#">DROPDOWN</a></li>
-            <li><a href = "#">PORTFOLIO</a></li>
-            <li><a href = "#">GALLERY</a></li>
-            <li><a href = "#">LONG TEXT LINK</a></li>
-        </ul>
+    <div class = "tape_of_main_menu">
+        <div class = "main_menu"> 
+            <ul>
+                <li><a href = "#">HOME</a></li>
+                <li><a href = "#">STYLE DEMO</a></li>
+                <li><a href = "#">FULL WIDTH</a></li>
+                <li><a href = "#">DROPDOWN</a></li>
+                <li><a href = "#">PORTFOLIO</a></li>
+                <li><a href = "#">GALLERY</a></li>
+                <li><a href = "#">LONG TEXT LINK</a></li>
+            </ul>
+        </div>
     </div>
-    <!-- <div class = "slider"><canvas id = "canva_slider" max-width = "960px"></canvas></div> -->
     <div class = "slider">
 
         <div class = "item first">
@@ -84,7 +87,7 @@
         </div>
 
         <div class = "item">
-        <img class = "slaider_img" src = "slider/4.png" >
+            <img class = "slaider_img" src = "slider/4.png" >
             <div class = "slider_text">
                 <p class = "name">Called though excuse4</p>
                 4Course sir people worthy horses add entire suffer. 
@@ -95,7 +98,7 @@
         </div>
 
         <div class = "item">
-        <img class = "slaider_img" src = "slider/5.png">
+            <img class = "slaider_img" src = "slider/5.png">
             <div class = "slider_text">
                 <p class = "name">Called though excuse5</p>
                 5Course sir people worthy horses add entire suffer. 
@@ -104,16 +107,16 @@
                 Any delicate you how kindness horrible outlived servants. Called though excuse
             </div>
         </div>
-
-    </div>
-    <a class = "slider_buttom prev" onclick = "minusSlide()">&#10094</a>
-    <a class = "slider_buttom next" onclick = "plusSlide()">&#10095</a>
-    <div class = "slider_dots">
-        <span class = "slider_dots_item first" onclick = "currentSlide(1)"></span>
-        <span class = "slider_dots_item" onclick = "currentSlide(2)"></span>
-        <span class = "slider_dots_item" onclick = "currentSlide(3)"></span>
-        <span class = "slider_dots_item" onclick = "currentSlide(4)"></span>
-        <span class = "slider_dots_item" onclick = "currentSlide(5)"></span>
+    
+        <a class = "slider_buttom prev" onclick = "minusSlide()">&#10094</a>
+        <a class = "slider_buttom next" onclick = "plusSlide()">&#10095</a>
+        <div class = "slider_dots">
+            <span class = "slider_dots_item first_dots" onclick = "currentSlide(1)"></span>
+            <span class = "slider_dots_item" onclick = "currentSlide(2)"></span>
+            <span class = "slider_dots_item" onclick = "currentSlide(3)"></span>
+            <span class = "slider_dots_item" onclick = "currentSlide(4)"></span>
+            <span class = "slider_dots_item" onclick = "currentSlide(5)"></span>
+        </div>
     </div>
 
 
@@ -147,14 +150,14 @@
             </div>
         </div>
 	</div>
-	
-    <div class = "bottom_to_small_slider">
-        <div class = "bottom" onclick = "left_ss()"><</div>
-        <div class = "bottom" onclick = "right_ss()">></div>
+	<div class = "bottom_to_small_slider">
+            <div class = "bottom" onclick = "left_ss()"><</div>
+            <div class = "bottom" onclick = "right_ss()">></div>
     </div>
+    
     <div class = "act">
         <div class = "part_of_act welcome_message"><a href = "#">Welcome Message Here</a></div>
-        <div class = "part_of_act latest_project_work"><a href = "#">Lasted Progect Work</a></div>
+        <div class = "part_of_act latest_project_work"><a href = "#">Lasted Progect Work</a></div>   
     </div>
 
     <div class = "information_block">
@@ -233,9 +236,6 @@
         </div>
         <!-- скрытые блоки для выравнивания по ширине -->
         <div class = "part_of_content invisible"></div>
-        <div class = "part_of_content invisible"></div>
-        <div class = "part_of_content invisible"></div>
-        <div class = "part_of_content invisible"></div>
     </div>   
 </div>
 <!-- поддон -->
@@ -247,60 +247,59 @@
         </a>
     </div>
     <div class = "footer_information">
-
-        <div class = "part_of_footer_information company_details">
-            <p class = "name">COMPANY DETAILS</p>
-            <p>Nam eget dui. Cras id dui. Cras risus ipsum, faucibus ut, 
-                ullamcorper id, varius ac, leo. Quisque id mi. Maecenas temp</p>
-            <p>Company Name<br>Street Name & Number<br>Line Two<br>Town<br>Postcode/Zip</p>
-            <p>Tel:XXXXX XXXXXXXXXX<br>Fax:XXXXX XXXXXXXXXX<br>Email:contact@mydomain.com</p>
-        </div>
-
-        <div class = "part_of_footer_information latest_blog_posts">
-            <p class = "name">LASTED BLOG POSTS</p>
-            <div class = "blog_posts"><img src = "footer/blog_posts.png" class = "post" align = "left">
-                <div class = "post">Nulla facilisi. Aliquam eu nunc. Vivamus aliquet elit ac nisl. Nunc eges</div>
-            </div>                           
-            <div class = "blog_posts"><img src = "footer/blog_posts.png" class = "post" align = "left">
-                <div class = "post">Nulla facilisi. Aliquam eu nunc. Vivamus aliquet elit ac nisl. Nunc eges</div>
+        <div class = "information">
+            <div class = "part_of_footer_information company_details">
+                <p class = "name">COMPANY DETAILS</p>
+                <p>Nam eget dui. Cras id dui. Cras risus ipsum, faucibus ut, 
+                    ullamcorper id, varius ac, leo. Quisque id mi. Maecenas temp</p>
+                <p>Company Name<br>Street Name & Number<br>Line Two<br>Town<br>Postcode/Zip</p>
+                <p>Tel:XXXXX XXXXXXXXXX<br>Fax:XXXXX XXXXXXXXXX<br>Email:contact@mydomain.com</p>
             </div>
-            <div class = "blog_posts"><img src = "footer/blog_posts.png" class = "post" align = "left">
-                <div class = "post">Nulla facilisi. Aliquam eu nunc. Vivamus aliquet elit ac nisl. Nunc eges</div>
+
+            <div class = "part_of_footer_information latest_blog_posts">
+                <p class = "name">LASTED BLOG POSTS</p>
+                <div class = "blog_posts"><img src = "footer/blog_posts.png" class = "post" align = "left">
+                    <div class = "post">Nulla facilisi. Aliquam eu nunc. Vivamus aliquet elit ac nisl. Nunc eges</div>
+                </div>                           
+                <div class = "blog_posts"><img src = "footer/blog_posts.png" class = "post" align = "left">
+                    <div class = "post">Nulla facilisi. Aliquam eu nunc. Vivamus aliquet elit ac nisl. Nunc eges</div>
+                </div>
+                <div class = "blog_posts"><img src = "footer/blog_posts.png" class = "post" align = "left">
+                    <div class = "post">Nulla facilisi. Aliquam eu nunc. Vivamus aliquet elit ac nisl. Nunc eges</div>
+                </div>
             </div>
-        </div>
 
-        <div class = "part_of_footer_information quick_lenks">
-            <p class = "name">QUICK LINKS</p>
-            <ul>
-                <li><a>Lorem ipsum dolor sit</a></li>
-                <li><a>Amet consectetur</a></li>
-                <li><a>Praesent vel sem id</a></li>
-                <li><a>Curebitur hendrerit est</a></li>
-                <li><a>Aliquam eget erat nec sapien</a></li>
-                <li><a>Cras id augue nunc</a></li>
-                <li><a>In nec justo non</a></li>
-                <li><a>Vivamus mollis enim ut</a></li>
-            </ul>
-        </div>
+            <div class = "part_of_footer_information quick_lenks">
+                <p class = "name">QUICK LINKS</p>
+                <ul>
+                    <li><a>Lorem ipsum dolor sit</a></li>
+                    <li><a>Amet consectetur</a></li>
+                    <li><a>Praesent vel sem id</a></li>
+                    <li><a>Curebitur hendrerit est</a></li>
+                    <li><a>Aliquam eget erat nec sapien</a></li>
+                    <li><a>Cras id augue nunc</a></li>
+                    <li><a>In nec justo non</a></li>
+                    <li><a>Vivamus mollis enim ut</a></li>
+                </ul>
+            </div>
 
-        <div class = "part_of_footer_information contact_us">
-            <p class = "name">CONTACT US</p>
-            <form action = "#">
-                <input class = "form_form person_data" name = "name" type = "text" placeholder = "Name"><br>
-                <input class = "form_form person_data" name = "email" type = "email" placeholder = "Email"><br>
-                <textarea class = "form_form message" name = "message" placeholder = "Message"></textarea><br>
-                <input type = "submit" class = "submit" value = "SUBMIT"></div>
-            </form>
+            <div class = "part_of_footer_information contact_us">
+                <p class = "name">CONTACT US</p>
+                <form action = "#">
+                    <input class = "form_form person_data" name = "name" type = "text" placeholder = "Name"><br>
+                    <input class = "form_form person_data" name = "email" type = "email" placeholder = "Email"><br>
+                    <textarea class = "form_form message" name = "message" placeholder = "Message"></textarea><br>
+                    <input type = "submit" class = "submit" value = "SUBMIT">
+                </form>
+            </div>
+            <div class = "part_of_footer_information invisible"></div>
         </div>
-
         <div class = "about_us">
             <div class = "end left_part">Copyright &copy 2013 Domain Name - All Rights Reserved</div>
             <div class = "end right_part">Template by OS Temblates</div>
         </div>
-
 </div>
 
-<div id = "proba"></div>
 <script src = "act.js"></script>
 </body>
 </html>

@@ -1,23 +1,29 @@
-body{
-    padding: 20px;
+.body{
     min-width: 320px;
     cursor: default;
+    margin-left: 0px;
 }
 
 /*Шапка*/
 .header .contact {
+    position: relative;
+    top: 10;
     background: rgb(42, 162, 212);
     color:white;
 }
 .main_strip{
     min-height: 50px;
     padding-left: 15px;
+    max-width: 960px;
+    /* border: yellow solid 1px; */
+    margin:auto;
+    position: relative;
 }
 .icon img{
-    margin: 10px;
+    margin-right: 10px;
     height: 35px;
     border-radius: 50%;
-    margin-right: 5px;
+    cursor: pointer;
 }
 .icon{
     display: inline-block;
@@ -29,18 +35,19 @@ body{
 .social_networks{
     position: absolute;
     right: auto;
-    left: 40px;
-    top: 25px; 
+    left: 30px;
+    top: 7px; 
 }
 .top_menu{
     position: absolute;
     left: auto;
     right: 40px;
-    top: 45px; 
+    top: 15px; 
 }
 .top_menu .menu{
     border-left: white solid 1px;
     padding-left: 5px;
+    cursor: pointer;
 }
 .top_menu .menu:hover{
     text-decoration: underline;
@@ -48,22 +55,25 @@ body{
 .top_menu .sign_up{
     border: none;
 }
-.add{
-    position: absolute;
-    padding: 0px 15px 5px;
-    height: 40px;
-    right:50px;
-    top: 65px;
-}
 
-.top_bloch_name{
+.main_name{
+    max-width: 960px;
+    /* border: yellow solid 1px; */
+    margin:auto;
+}
+.top_block_name{
     display: inline-block;
+    position: relative;
+    /* border: yellow solid 1px; */
 }
 .euonymus{
-    position: absolute;
-    left: 60px;
-    top: 110px; 
+    top: 40px; 
     font-size: 35px;
+    text-align: left;
+    left: 20px;
+    margin-right:auto;
+    width:200px;
+    cursor: default;
 }
 .euonymus:first-letter{
     font-size: 60px;
@@ -71,16 +81,18 @@ body{
 .name_decryption{
     color:rgb(155, 154, 154);
     border-left: rgb(155, 154, 154) solid 1px;
-    padding-left: 10px;
-    position: absolute;
-    left: 260px;
-    top: 135px;
-    margin-left:20px;
+    padding-left: 5px;
+    top: 45px;
+    left: 25px;
+    margin-right:auto;
+    text-align: left;
+    cursor: default;
 }
 .search{
-    position: absolute;
-    right: 50px;
-    top: 135px;
+    text-align: right;
+    top: 35px;
+    right: -250px;
+    margin-left:auto;
 }
 .input_search{
     background: rgb(42, 42, 42);
@@ -101,16 +113,16 @@ body{
     padding: 0 10px;
     border-radius: 0 10% 10% 0;
     outline:none;
-    border: rgb(42, 162, 212) solid 1px;
+    border: rgb(42, 162, 212) solid 5px;
     font-weight: bold;
     letter-spacing: 2px;
     transition: 0.2s; 
+    cursor: pointer;
 }
 .submit:hover{
     border: rgba(42, 45, 212, 0.486) solid 5px;
-    padding: 0 6px;
-	
 }
+
 .small_menu img{
     display:none;
 }
@@ -121,14 +133,13 @@ body{
     display:none;
 }
 
-
 /*Поддон*/
 .footer{
     margin: 20px 0px 30px;
     background: rgb(28, 28, 28);
     color: rgb(82, 82, 82);
     position: relative;
-    top: 20px; 
+    top: 100px; 
     text-align: center;
 }
 .scrolling{
@@ -136,9 +147,12 @@ body{
     padding: 20px 0px 0px;
     transition: 0.2s;  
 }
-
+.scrolling img{
+    cursor: pointer
+}
 #scrolltop:hover .top{
     color:white;
+    cursor: pointer
 }
 .top{
     margin-top: -10px;
@@ -146,19 +160,23 @@ body{
 .footer_information{
     border-top: rgb(51, 51, 51) solid 1px;
     border-bottom: rgb(51, 51, 51) solid 1px;
-    padding: 15px 0px 40px 15px;
     text-align: justify;
+}
+.footer_information .information{
+    position: relative;
+    max-width: 960px;
+    /* border: yellow solid 1px; */
+    margin:auto;
 }
 .part_of_footer_information{
     display:inline-block;
     max-width: 23%;
     text-align: left;
     vertical-align: top;
-    margin: 0 20px;
+    margin: 0px 6px;
     min-width: 200px;
-}
-.company_details{
-    margin-left: 10px;
+    /* border: yellow solid 1px; */
+    cursor: default;
 }
 .part_of_footer_information .name{
     color: white;
@@ -188,7 +206,7 @@ body{
 }
 .form_form{
     background: rgb(35, 35, 35);
-    color: rgb(77, 77, 77);
+    color: rgb(158, 158, 158);
     border: none;
     font-size: 16px;
     margin-bottom: 10px;
@@ -203,42 +221,53 @@ body{
     height: 150px;
     padding: 10px;
     resize: none;
+    width: 220px;
 }
 .contact_us .submit{
     border-radius: 10%;
 }
-.contact_us {
-    margin-right: 10px;
-}
 .about_us{
     position: relative;
     min-height: 60px;
+    max-width: 960px;
+    /* border: yellow solid 1px; */
+    margin:auto;
+    cursor: default;
 }
 .about_us .end{
     display: inline-block;
     position: relative;
     padding: 20px;
+    /* border: yellow solid 1px; */
+    min-width: 43%;
 }
 .about_us .left_part{
-    position: absolute;
     left: 0px;
+    margin-right: 20px;
 
 }
 .about_us .right_part{
-    position: absolute;
     right: 0px;
+    margin: auto;
+    text-align: right;
 }
 
 
 /* основная часть */
-.main_menu{
+.tape_of_main_menu{
     min-height: 50px;
     background: rgb(42, 42, 42);
-    color: white;
     position: relative;
-    top: 140px;
+    top: 80px;
     padding-top: 1px;
     padding-bottom: 1px;
+}
+.main_menu{
+    color: white;
+    position: relative;
+    max-width: 960px;
+    /* border: yellow solid 1px; */
+    margin:auto;
 }
 .main_menu ul{
     list-style-type: none;
@@ -259,13 +288,14 @@ body{
     text-decoration: none;
     color: rgb(153, 153, 153);
 }
- .slider{
+.slider{
     position: relative;
-    top: 140px;
+    top: 80px;
     height: 350px;
-    /* width: 960px; */
+    max-width: 960px;
+    /* border: yellow solid 1px; */
+    margin:auto;
     background: rgb(82, 82, 82);
-    margin: 0px 20px;
 	overflow:  hidden;
 } 
 .slider .item{
@@ -277,7 +307,7 @@ body{
 }
 .slider .item img{
     position:relative;
-    width: 960px;
+    max-width: 960px;
     height: 100%;
 }
 
@@ -293,9 +323,9 @@ body{
 .slider .item .slider_text{
     position: absolute;
     right: 0;
-    top:220px;
+    top:215px;
     width: 40%;
-    height: 108px;
+    height: 110px;
     background: rgba(0, 0, 0, 0.5);
     color: rgb(214, 214, 214);
     font-size: 13px;
@@ -303,32 +333,42 @@ body{
     text-align: left;
     animation-name: anim_text;
     animation-duration: 0.4s;
+    cursor: default;
 }
 .slider .item .slider_text .name{
     font-size: 16px;
+    cursor: default;
 }
 
 .slider_buttom{
     padding: 5px 15px;
     border-radius:50%;
-    border:rgb(153, 153, 153) solid 1px;
+    border:rgb(153, 153, 153) solid 3px;
     color:rgb(153, 153, 153);
     background: rgba(51, 51, 51, 0.5);
     position: absolute;
     font-size: 24px;
-    top: 415px;
+    top: 40%;
     transition: 0.2s; 
+    user-select: none;
+    cursor: pointer;
+}
+.prev{
+    left: 10px;
+}
+.next{
+    right: 10px;
 }
 .slider_buttom:hover{
-     border:rgb(153, 153, 153) solid 1px;
     border: rgb(42, 162, 212) solid 3px;
     color: rgb(42, 162, 212);
-    padding: 3px 13px;
 }
 .slider_dots{
     position: absolute;
-    top: 595px;
-    left: 60px;
+    top: 90%;
+    left: 10px;
+    user-select: none;
+    cursor: default;
 }
 .slider_dots_item{
     padding: 4px;
@@ -338,15 +378,10 @@ body{
     margin-right: 5px;
     background:rgb(182, 182, 182);
     border: rgb(148, 145, 145) solid 1px;
+    cursor: pointer;
 }
-.slider_dots .first{
-    background: none;
-}
-.prev{
-    left: 50px;
-}
-.next{
-    right: 50px;
+.first_dots{
+    background:none;
 }
 @keyframes anim_text{
     from {
@@ -374,19 +409,24 @@ body{
 }
 
 .small_slider{
+    font-size: 0px;
     position: relative;
-    top:150px;
+    top:100px;
     text-align: justify;
 	max-height: 140px;
     overflow: hidden;
-    padding: 0px 20px;
+    max-width: 960px;
+    /* border: yellow solid 1px; */
+    margin:auto;
 }
 .block_in_small_slider{
     display: inline-block;
     min-width: 20%;
     max-width: 210px;
-    margin: 15px;	
+    margin: 10px;	
     text-align: left;
+    /* border: yellow solid 1px; */
+    cursor: default;
 }
 .small_slider .ss_active_left{
 	display: inline-block;
@@ -434,18 +474,47 @@ body{
     font-size: 16px;
     margin-bottom: 5px;
 }
+.bottom_to_small_slider{
+    position: relative;
+    top: 100px;
+    text-align: right;
+    user-select: none;
+    max-width: 900px;
+    /* border: yellow solid 1px; */
+    margin: auto;
+    cursor: pointer;
+}
+.bottom_to_small_slider .bottom{
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 70%;
+    font-size: 15px;
+    padding: 3px 8px;
+    background: rgb(42, 162, 212);
+    color: white;
+    transition: 0.4s ease;
+    border: rgba(42, 45, 212, 0) solid 3px;
+}
+.bottom_to_small_slider .bottom:hover{
+    border: rgba(42, 45, 212, 0.486) solid 3px;
+}
 
 .act{
-    margin-top: 200px;
+    position: relative;
+    top: 100px;
+    font-size: 0px;
+    max-width: 960px;
+    margin:auto;
 }
 .part_of_act{
     display: inline-block;
     width: 47%;
     border-bottom: rgb(228, 221, 221) solid 1px;
     text-decoration: none;
+    font-size: 14px;
 }
 .part_of_act a{
-    text-decoration: none;    
+    text-decoration: none;   
     color: rgb(82, 82, 82);
 }
 .part_of_act a:hover{
@@ -455,34 +524,15 @@ body{
     margin-right: 40px;
 }
 
-.bottom_to_small_slider{
-    right: 30px;
-    position: absolute;
-    text-align: right;
-	top: 780px;
-    margin-right: 50px;
-}
-.bottom_to_small_slider .bottom{
-    display: inline-block;
-    border-radius: 70%;
-    font-size: 15px;
-    padding: 3px 8px;
-    background: rgb(42, 162, 212);
-    color: white;
-    transition: 0.4s ease;
-    /* transition: 0.4s;
-    transition-timing-function: linear; */
-}
-.bottom_to_small_slider .bottom:hover{
-    border: rgba(42, 45, 212, 0.486) solid 2px;
-    padding: 2px 7px;
-}
-
 .information_block{
     position: relative;
-    top: 20px;
+    top: 100px;
     text-align: justify;
     padding: 0px 20px;
+    max-width: 960px;
+    /* border: yellow solid 1px; */
+    margin:auto;
+    cursor: default;
 }
 .information_block .part_of_content{
     display: inline-block;
@@ -491,6 +541,7 @@ body{
     margin: 15px;
     text-align: left;
     vertical-align: top;
+
 }
 .information_block .part_of_content img{
     width: 225px;
@@ -532,3 +583,9 @@ body{
     max-width: 23%;
     min-width: 17%;
     }
+a{
+    cursor: pointer
+}
+.invisible{
+    min-width: 90%;
+}
