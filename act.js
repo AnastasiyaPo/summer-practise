@@ -65,13 +65,13 @@ function showSlides(n, direction){
 // маленький слайдер(не ограниченный без прокрутки)
 
 
-var small_slider = [['small_slider/picture_to_ss1.png','1Indonectetus facilis','1Fat new smallness few supposing suspicion two. Way own uncommonly trave'],
-                    ['small_slider/picture_to_ss2.png','2Indonectetus facilis','2Fat new smallness few supposing suspicion two. Way own uncommonly trave'],
-                    ['small_slider/picture_to_ss3.png','3Indonectetus facilis','3Fat new smallness few supposing suspicion two. Way own uncommonly trave'],
-                    ['small_slider/picture_to_ss4.png','4Indonectetus facilis','4Fat new smallness few supposing suspicion two. Way own uncommonly trave'],
-                    ['small_slider/picture_to_ss5.png','5Indonectetus facilis','5Fat new smallness few supposing suspicion two. Way own uncommonly trave'],
-                    ['small_slider/picture_to_ss6.png','6Indonectetus facilis','6Fat new smallness few supposing suspicion two. Way own uncommonly trave'],
-                    ['small_slider/picture_to_ss7.png','7Indonectetus facilis','7Fat new smallness few supposing suspicion two. Way own uncommonly trave'],
+var small_slider = [['picture/picture_to_ss1.png','1Indonectetus facilis','1Fat new smallness few supposing suspicion two. Way own uncommonly trave'],
+                    ['picture/picture_to_ss2.png','2Indonectetus facilis','2Fat new smallness few supposing suspicion two. Way own uncommonly trave'],
+                    ['picture/picture_to_ss3.png','3Indonectetus facilis','3Fat new smallness few supposing suspicion two. Way own uncommonly trave'],
+                    ['picture/picture_to_ss4.png','4Indonectetus facilis','4Fat new smallness few supposing suspicion two. Way own uncommonly trave'],
+                    ['picture/picture_to_ss5.png','5Indonectetus facilis','5Fat new smallness few supposing suspicion two. Way own uncommonly trave'],
+                    ['picture/picture_to_ss6.png','6Indonectetus facilis','6Fat new smallness few supposing suspicion two. Way own uncommonly trave'],
+                    ['picture/picture_to_ss7.png','7Indonectetus facilis','7Fat new smallness few supposing suspicion two. Way own uncommonly trave'],
             ];
 var ss_len = small_slider.length;
 

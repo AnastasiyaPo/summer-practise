@@ -175,7 +175,7 @@
     }
     .slider .item img{
         width:320px;
-        height:130px;
+        height:117px;
     }
     .slider_text{
         display:none;
@@ -198,7 +198,6 @@
         border-bottom: none;
     }
     .main_menu li:hover{
-        padding: 5px 15px 5px 15px;
         border-bottom: rgb(42, 162, 212) 2px solid;
     }
     .information_block .part_of_content{

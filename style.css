@@ -279,10 +279,10 @@
     white-space: nowrap;
     padding: 5px 15px 5px 15px;
     transition: 0.2s;
+    padding-bottom: 15px;
 }
 .main_menu li:hover{
-    border-bottom: rgb(42, 162, 212) 2px solid;
-    padding-bottom: 15px;
+    border-bottom: rgb(42, 162, 212) 3px solid
 }
 .main_menu a{
     text-decoration: none;
@@ -307,8 +307,8 @@
 }
 .slider .item img{
     position:relative;
-    max-width: 960px;
-    height: 100%;
+    width: 960px;
+    height: 350px;
 }
 
 .slider .item .left{  /* свойства присваиваются в act.js*/
@@ -379,6 +379,7 @@
     background:rgb(182, 182, 182);
     border: rgb(148, 145, 145) solid 1px;
     cursor: pointer;
+    /* animation-duration: 2s;  */
 }
 .first_dots{
     background:none;
