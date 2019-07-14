@@ -37,6 +37,10 @@
     right: auto;
     left: 30px;
     top: 7px; 
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    user-select: none;
 }
 .top_menu{
     position: absolute;
@@ -146,6 +150,10 @@
     height: 40px;
     padding: 20px 0px 0px;
     transition: 0.2s;  
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    user-select: none;
 }
 .scrolling img{
     cursor: pointer
@@ -333,7 +341,7 @@
     text-align: left;
     animation-name: anim_text;
     animation-duration: 0.4s;
-    cursor: default;
+    cursor: default; 
 }
 .slider .item .slider_text .name{
     font-size: 16px;
@@ -352,6 +360,10 @@
     transition: 0.2s; 
     user-select: none;
     cursor: pointer;
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    user-select: none;
 }
 .prev{
     left: 10px;
@@ -369,6 +381,10 @@
     left: 10px;
     user-select: none;
     cursor: default;
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    user-select: none;
 }
 .slider_dots_item{
     padding: 4px;
@@ -413,27 +429,30 @@
     font-size: 0px;
     position: relative;
     top:100px;
-    text-align: justify;
-	max-height: 140px;
+    text-align: center;
+	max-height: 120px;
     overflow: hidden;
     max-width: 960px;
     /* border: yellow solid 1px; */
     margin:auto;
+    padding: 0px;
 }
 .block_in_small_slider{
     display: inline-block;
     min-width: 20%;
-    max-width: 210px;
-    margin: 10px;	
+    max-width: 220px;
     text-align: left;
     /* border: yellow solid 1px; */
     cursor: default;
+    margin: auto;
+    padding: 0px 5px 0px 5px;
 }
 .small_slider .ss_active_left{
 	display: inline-block;
     animation-name: ss_departure_left;
 	animation-fill-mode: forwards;
     animation-duration: 0.6s;
+    margin: auto
 }
 .small_slider .ss_active_right{
 	display: inline-block;
@@ -447,7 +466,7 @@
         transform: translateX(0%)
     }
     to{
-        transform: translateX(-115%)
+        transform: translateX(-100%)
     }
 }
 @keyframes ss_departure_right{
@@ -455,7 +474,7 @@
         transform: translateX(0%)
     }
     to{
-        transform: translateX(115%)
+        transform: translateX(100%)
     }
 }
 .block_in_small_slider img{
@@ -484,6 +503,10 @@
     /* border: yellow solid 1px; */
     margin: auto;
     cursor: pointer;
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    user-select: none;
 }
 .bottom_to_small_slider .bottom{
     display: inline-block;
