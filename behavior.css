@@ -184,7 +184,8 @@
         display: none;
     }
     .slider_buttom{
-        top: 30%;
+        font-size: 14px;
+        padding: 3px 10px;
     }
     .main_menu li{
         font-size: 12px;
