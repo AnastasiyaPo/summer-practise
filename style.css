@@ -290,7 +290,10 @@
     padding-bottom: 15px;
 }
 .main_menu li:hover{
-    border-bottom: rgb(42, 162, 212) 3px solid
+    border-bottom: rgb(42, 162, 212) 3px solid;
+}
+.main_menu a:hover{
+    color: white;
 }
 .main_menu a{
     text-decoration: none;

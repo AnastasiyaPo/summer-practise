@@ -25,9 +25,14 @@ function minusSlide(){
 function currentSlide(n){
     var direction = 'none';
     console.log("index = " + slideIndex + " n = " + n);
-    if (n < slideIndex) {direction = ' left'; 
-    console.log("влево");}
-    if (n > slideIndex) {direction = ' right'; console.log("вправо")};
+    if (n < slideIndex) {
+        direction = ' left'; 
+        // console.log("влево");
+    }
+    if (n > slideIndex) {
+        direction = ' right'; 
+        // console.log("вправо")
+    };
     slideIndex = n;
     showSlides(slideIndex, direction);
 }
