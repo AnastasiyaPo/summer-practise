@@ -103,7 +103,7 @@
     color:white;
     height: 45px;
     width: 250px;
-    border-radius: 10% 0 0 10%;
+    /* border-radius: 10% 0 0 10%; */
     outline:none;
     border: rgb(42, 42, 42);
     margin-right:-5px;
@@ -525,7 +525,7 @@
     padding: 3px 8px;
     background: rgb(42, 162, 212);
     color: white;
-    transition: 0.4s ease;
+    transition: 0.2s ease;
     border: rgba(42, 45, 212, 0) solid 3px;
 }
 .bottom_to_small_slider .bottom:hover{
