@@ -31,6 +31,7 @@
 
 .top_block{
     display: inline-block;
+    cursor: default;
 }
 .social_networks{
     position: absolute;
@@ -279,6 +280,7 @@
     max-width: 960px;
     /* border: yellow solid 1px; */
     margin:auto;
+	cursor: default; 	
 }
 .main_menu ul{
     list-style-type: none;
@@ -291,17 +293,19 @@
     padding: 5px 15px 5px 15px;
     transition: 0.2s;
     padding-bottom: 15px;
+	cursor: default; 	
 }
-.main_menu li:hover{
+.main_menu li:hover, .active_menu{
     border-bottom: rgb(42, 162, 212) 3px solid;
-}
-.main_menu a:hover{
-    color: white;
 }
 .main_menu a{
     text-decoration: none;
     color: rgb(153, 153, 153);
 }
+.main_menu a:hover, .active_menu a{
+    color: white;
+}
+
 .one_menu{
     display:none;
 }

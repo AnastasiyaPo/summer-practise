@@ -95,3 +95,14 @@ function right_ss(){
         	pic[i].className = pic[i].className += " ss_active_right"; 
         }
 }
+
+
+
+//зменение активности главного меню
+function change_menu_activity(n){
+	var main_menu = document.getElementsByClassName("part_of_mm");
+	mm_len = main_menu.length;
+	for (i = 0; i < mm_len; i++)
+        main_menu[i].className = main_menu[i].className.replace(" active_menu", "");	
+	main_menu[n].className = main_menu[n].className += " active_menu"; 
+}
